@@ -1,0 +1,32 @@
+.works {
+  display: flex;
+}
+
+.works__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.works__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  padding-left: 82px;
+  padding-right: 82px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  height: 70px;
+  width: 370px;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.works__box {
+  position: relative;
+}

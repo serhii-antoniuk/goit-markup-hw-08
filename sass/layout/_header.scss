@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--secondary-title-color);
+  border-bottom: 1px;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
