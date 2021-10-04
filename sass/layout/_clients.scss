@@ -1,12 +1,19 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
-  &:not(:last-child) {
-    margin-right: 30px;
+  margin: 15px;
+  flex-basis: calc((100% - 60px) / 2);
+
+  @media screen and( min-width: 768px) {
+    flex-basis: calc((100% - 120px) / 3);
+  }
+  @media screen and( min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
   }
 }
 

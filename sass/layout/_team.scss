@@ -11,17 +11,31 @@
   color: var(--main-title-color);
 }
 
+.team {
+  @media screen and( min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .team__item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and( min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and( min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  @media screen and( max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
 .section--background {
   background-color: #f5f4fa;
-}
-.team {
-  display: flex;
 }
 
 .team__box {
