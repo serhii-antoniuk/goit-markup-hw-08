@@ -9,6 +9,19 @@
 
 .header__logo {
   margin-right: 93px;
+
+  @media screen and (max-width: 767px) {
+    top: 16px;
+    bottom: 16px;
+  }
+  @media screen and (max-width: 1199px) {
+    top: 26px;
+    bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 24px;
+    bottom: 24px;
+  }
 }
 
 .logo__web {

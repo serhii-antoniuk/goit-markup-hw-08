@@ -28,10 +28,16 @@
         <a href="/" class="logo header__logo"
           >Web<span class="logo__web">Studio</span></a
         >
-        <button type="button" class="button-open" data-menu-open>open</button>
+        <button type="button" class="button-open" data-menu-open>
+          <svg class="mobile__button-open" width="24" height="16">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </button>
         <div class="mobile__menu" data-menu>
           <button type="button" class="button-close" data-menu-close>
-            close
+            <svg class="mobile__button-close" width="24" height="16">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
           </button>
           <nav class="header__navigation">
             <!-- Ссылки на другие страницы и разделы текущей страницы -->
@@ -189,7 +195,7 @@
         </div>
       </section>
 
-      <!--<section class="section">
+      <section class="section section-works">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="works">
@@ -233,19 +239,37 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
       <section class="section section--background">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img
-                src="./images/four.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-ds-min/team-1ds-1x-min.jpg,
+                    ./images/team-ds-min/team-1ds-2x-min.jpg
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab-min/team-1tab-1x-min.jpg,
+                    ./images/team-tab-min/team-1tab-2x-min.jpg
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mob-min/team-1mob-1x-min.jpg,
+                    ./images/team-mob-min/team-1mob-2x-min.jpg
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/four.jpg" alt="Игорь Демьяненко" />
+              </picture>
 
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -296,12 +320,31 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/five.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-ds-min/team-2ds-1x-min.jpg,
+                    ./images/team-ds-min/team-2ds-2x-min.jpg
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab-min/team-2tab-1x-min.jpg,
+                    ./images/team-tab-min/team-2tab-2x-min.jpg
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mob-min/team-2mob-1x-min.jpg,
+                    ./images/team-mob-min/team-2mob-2x-min.jpg
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/five.jpg" alt="Ольга Репина" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__description">Frontend Developer</p>
@@ -351,12 +394,31 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/six.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-ds-min/team-3ds-1x-min.jpg,
+                    ./images/team-ds-min/team-3ds-2x-min.jpg
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab-min/team-3tab-1x-min.jpg,
+                    ./images/team-tab-min/team-3tab-2x-min.jpg
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mob-min/team-3mob-1x-min.jpg,
+                    ./images/team-mob-min/team-3mob-2x-min.jpg
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/six.jpg" alt="Николай Тарасов" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__description">Marketing</p>
@@ -406,12 +468,31 @@
             </li>
 
             <li class="team__item">
-              <img
-                src="./images/seven.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-ds-min/team-4ds-1x-min.jpg,
+                    ./images/team-ds-min/team-4ds-2x-min.jpg
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-tab-min/team-4tab-1x-min.jpg,
+                    ./images/team-tab-min/team-4tab-2x-min.jpg
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-mob-min/team-4mob-1x-min.jpg,
+                    ./images/team-mob-min/team-4mob-2x-min.jpg
+                  "
+                  media="(min-width:480px)"
+                />
+                <img src="./images/seven.jpg" alt="Михаил Ермаков" />
+              </picture>
+
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__description">UI Designer</p>
