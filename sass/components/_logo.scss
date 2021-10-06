@@ -1,27 +1,42 @@
+// .logo {
+//   font-family: Raleway;
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: var(--accent-color);
+//   padding-top: 29.5px;
+//   padding-bottom: 29.5px;
+// }
+
 .logo {
+  display: inline-block;
   font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  font-weight: bold;
   color: var(--accent-color);
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 1.17px;
+  letter-spacing: 0.03em;
+  padding-top: 29.5px;
+  padding-bottom: 29.5px;
 }
 
 .header__logo {
-  margin-right: 93px;
+  // margin-right: 93px;
 
-  @media screen and (max-width: 767px) {
-    top: 16px;
-    bottom: 16px;
-  }
-  @media screen and (max-width: 1199px) {
-    top: 26px;
-    bottom: 26px;
-  }
-  @media screen and (min-width: 1200px) {
-    top: 24px;
-    bottom: 24px;
-  }
+  // @media screen and (max-width: 767px) {
+  //   top: 16px;
+  //   bottom: 16px;
+  // }
+  // @media screen and (max-width: 1199px) {
+  //   top: 26px;
+  //   bottom: 26px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   top: 24px;
+  //   bottom: 24px;
+  // }
 }
 
 .logo__web {

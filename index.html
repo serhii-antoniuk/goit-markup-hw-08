@@ -92,7 +92,7 @@
               </li>
             </ul>
             <ul class="contacts__mobal">
-              <li class="contacts__mobal-item">
+              <li class="contacts__mobal-tel-item">
                 <a
                   class="contacts__mobal-tel"
                   href="tel:+380961111111"
@@ -101,7 +101,7 @@
                   +38 096 111 11 11</a
                 >
               </li>
-              <li class="contacts__mobal-item">
+              <li class="contacts__mobal-mail-item">
                 <a
                   class="contacts__mobal-mail"
                   href="mailto:info@devstudio.com"
@@ -112,10 +112,18 @@
               </li>
             </ul>
             <ul class="network">
-              <li class="network__social">Instagram</li>
-              <li class="network__social">Twitter</li>
-              <li class="network__social">Facebook</li>
-              <li class="network__social">LinkedIn</li>
+              <li class="network__social">
+                <a href="network__link">Instagram</a>
+              </li>
+              <li class="network__social">
+                <a href="network__link">Twitter</a>
+              </li>
+              <li class="network__social">
+                <a href="network__link">Facebook</a>
+              </li>
+              <li class="network__social">
+                <a href="network__link">LinkedIn</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -130,7 +138,7 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button class="hero__button current" type="button" data-modal-open>
+          <button class="hero__button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -201,39 +209,70 @@
           <ul class="works">
             <li class="works__item">
               <div class="works__box">
-                <img
-                  src="./images/one.jpg"
-                  alt="Человек работает за
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works-ds-min/works-1ds-1x-min.jpg,
+                      ./images/works-ds-min/works-1ds-2x-min.jpg
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <img
+                    src="./images/one.jpg"
+                    alt="Человек работает за
                 компьютером"
-                  width="370"
-                  height="294"
-                />
+                    width="370"
+                    height="294"
+                  />
+                </picture>
+
                 <p class="works__text">Десктопные приложения</p>
               </div>
             </li>
 
             <li class="works__item">
               <div class="works__box">
-                <img
+                <source
+                    srcset="
+                      ./images/works-ds-min/works-3ds-1x-min.jpg,
+                      ./images/works-ds-min/works-3ds-2x-min.jpg
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <img
                   src="./images/two.jpg"
                   alt="Человек работает за
                 ноутбуком"
                   width="370"
                   height="294"
                 />
+                </picture>
+                
                 <p class="works__text">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="works__item">
               <div class="works__box">
-                <img
+                <source
+                    srcset="
+                      ./images/works-ds-min/works-2ds-1x-min.jpg,
+                      ./images/works-ds-min/works-2ds-2x-min.jpg
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <img
                   src="./images/three.jpg"
                   alt="Человек работает за
                 планшетом"
                   width="370"
                   height="294"
                 />
+                </picture>
+                
                 <p class="works__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -691,7 +730,7 @@
               name="mail"
             />
 
-            <button class="footer__button current" type="submit">
+            <button class="footer__button" type="submit">
               Подписаться
 
               <svg class="footer__form-icon" width="24" height="24">
@@ -790,7 +829,7 @@
               <a href="" class="modal-form__check-link">Условия договора</a>
             </label>
           </div>
-          <button class="hero__button current" type="submit" data-modal-open>
+          <button class="hero__button" type="submit" data-modal-open>
             Отправить
           </button>
         </form>

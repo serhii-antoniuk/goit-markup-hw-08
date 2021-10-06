@@ -1,11 +1,18 @@
 .contacts {
-  display: block;
+  // display: block;
   align-items: center;
   margin-left: auto;
-
   &:not(:last-child) {
     margin-right: 50px;
   }
+  @media screen and (min-width: 768px) {
+    margin-left: 58px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding: 0px;
+  }
+
   @media screen and(max-width: 767px) {
     display: none;
   }
@@ -14,10 +21,18 @@
   }
 }
 
+.contacs-wrapper {
+  @media screen and(min-width: 1200px) {
+    justify-content: center;
+  }
+}
+
 .contacts__mobal {
   display: block;
   align-items: center;
   margin-left: auto;
+  margin-bottom: 64px;
+  margin-right: 0px;
 
   &:not(:last-child) {
     margin-right: 50px;
@@ -28,9 +43,13 @@
 }
 
 .contacts__item {
+  justify-content: center;
   &:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
   }
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 
 .contacts__mobal-item {
@@ -89,13 +108,20 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0px;
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 30px;
   }
 }
 
@@ -106,13 +132,18 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0px;
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -136,4 +167,38 @@
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.contacts__mobal-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+  padding: 0px;
+}
+
+.contacts__mobal-mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+
+  padding: 0px;
+}
+
+.network {
+  flex-wrap: wrap;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
