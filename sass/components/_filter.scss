@@ -26,8 +26,10 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-bottom: 50px;
+  @media screen and( min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .filter__item {
@@ -37,5 +39,8 @@
   margin-top: 15px;
   &:not(:last-child) {
     margin-right: 8px;
+  }
+  @media screen and( min-width: 768px) {
+    margin-top: 0px;
   }
 }

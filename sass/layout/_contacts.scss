@@ -2,9 +2,9 @@
   // display: block;
   align-items: center;
   margin-left: auto;
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
   @media screen and (min-width: 768px) {
     margin-left: 58px;
     margin-top: 0px;
@@ -47,9 +47,14 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
-  // &:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  @media screen and(min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .contacts__mobal-item {
