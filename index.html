@@ -112,17 +112,20 @@
               </li>
             </ul>
             <ul class="network">
-              <li class="network__social">
-                <a href="network__link">Instagram</a>
+              <li class="network__item">
+                <a class="network__social" href="network__link">Instagram</a>
               </li>
-              <li class="network__social">
-                <a href="network__link">Twitter</a>
+
+              <li class="network__item">
+                <a class="network__social" href="network__link">Twitter</a>
               </li>
-              <li class="network__social">
-                <a href="network__link">Facebook</a>
+
+              <li class="network__item">
+                <a class="network__social" href="network__link">Facebook</a>
               </li>
-              <li class="network__social">
-                <a href="network__link">LinkedIn</a>
+
+              <li class="network__item">
+                <a class="network__social" href="network__link">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -209,23 +212,16 @@
           <ul class="works">
             <li class="works__item">
               <div class="works__box">
-                <picture>
-                  <source
-                    srcset="
-                      ./images/works-ds-min/works-1ds-1x-min.jpg,
-                      ./images/works-ds-min/works-1ds-2x-min.jpg
-                    "
-                    media="(min-width:1200px)"
-                  />
-
-                  <img
-                    src="./images/one.jpg"
-                    alt="Человек работает за
+                <img
+                  alt="Человек работает за
                 компьютером"
-                    width="370"
-                    height="294"
-                  />
-                </picture>
+                  src="./images/one.jpg"
+                  srcset="
+                    ./images/works-ds-min/works-1ds-1x-min.jpg 270w,
+                    ./images/works-ds-min/works-1ds-2x-min.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px, 25vw"
+                />
 
                 <p class="works__text">Десктопные приложения</p>
               </div>
@@ -233,46 +229,34 @@
 
             <li class="works__item">
               <div class="works__box">
-                <source
-                    srcset="
-                      ./images/works-ds-min/works-3ds-1x-min.jpg,
-                      ./images/works-ds-min/works-3ds-2x-min.jpg
-                    "
-                    media="(min-width:1200px)"
-                  />
-
-                  <img
-                  src="./images/two.jpg"
+                <img
                   alt="Человек работает за
                 ноутбуком"
-                  width="370"
-                  height="294"
+                  src="./images/two.jpg"
+                  srcset="
+                    ./images/works-ds-min/works-3ds-1x-min.jpg 270w,
+                    ./images/works-ds-min/works-3ds-2x-min.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px, 25vw"
                 />
-                </picture>
-                
+
                 <p class="works__text">Мобильные приложения</p>
               </div>
             </li>
 
             <li class="works__item">
               <div class="works__box">
-                <source
-                    srcset="
-                      ./images/works-ds-min/works-2ds-1x-min.jpg,
-                      ./images/works-ds-min/works-2ds-2x-min.jpg
-                    "
-                    media="(min-width:1200px)"
-                  />
-
-                  <img
-                  src="./images/three.jpg"
+                <img
                   alt="Человек работает за
-                планшетом"
-                  width="370"
-                  height="294"
+                ноутбуком"
+                  src="./images/three.jpg"
+                  srcset="
+                    ./images/works-ds-min/works-2ds-1x-min.jpg 270w,
+                    ./images/works-ds-min/works-2ds-2x-min.jpg 540w
+                  "
+                  sizes="(min-width: 1200px) 270px, 25vw"
                 />
-                </picture>
-                
+
                 <p class="works__text">Дизайнерские решения</p>
               </div>
             </li>
@@ -285,30 +269,19 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-ds-min/team-1ds-1x-min.jpg,
-                    ./images/team-ds-min/team-1ds-2x-min.jpg
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tab-min/team-1tab-1x-min.jpg,
-                    ./images/team-tab-min/team-1tab-2x-min.jpg
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mob-min/team-1mob-1x-min.jpg,
-                    ./images/team-mob-min/team-1mob-2x-min.jpg
-                  "
-                  media="(min-width:480px)"
-                />
-                <img src="./images/four.jpg" alt="Игорь Демьяненко" />
-              </picture>
+              <img
+                alt="фото-Игоря-Демьяненка"
+                src="./images/four.jpg"
+                srcset="
+                  ./images/team-ds-min/team-1ds-1x-min.jpg   270w,
+                  ./images/team-tab-min/team-1tab-1x-min.jpg 354w,
+                  ./images/team-mob-min/team-1mob-1x-min.jpg 450w,
+                  ./images/team-ds-min/team-1ds-2x-min.jpg   540w,
+                  ./images/team-tab-min/team-1tab-2x-min.jpg 708w,
+                  ./images/team-mob-min/team-1mob-2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
 
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -359,30 +332,19 @@
             </li>
 
             <li class="team__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-ds-min/team-2ds-1x-min.jpg,
-                    ./images/team-ds-min/team-2ds-2x-min.jpg
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tab-min/team-2tab-1x-min.jpg,
-                    ./images/team-tab-min/team-2tab-2x-min.jpg
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mob-min/team-2mob-1x-min.jpg,
-                    ./images/team-mob-min/team-2mob-2x-min.jpg
-                  "
-                  media="(min-width:480px)"
-                />
-                <img src="./images/five.jpg" alt="Ольга Репина" />
-              </picture>
+              <img
+                alt="фото-Ольга Репина"
+                src="./images/five.jpg"
+                srcset="
+                  ./images/team-ds-min/team-2ds-1x-min.jpg   270w,
+                  ./images/team-tab-min/team-2tab-1x-min.jpg 354w,
+                  ./images/team-mob-min/team-2mob-1x-min.jpg 450w,
+                  ./images/team-ds-min/team-2ds-2x-min.jpg   540w,
+                  ./images/team-tab-min/team-2tab-2x-min.jpg 708w,
+                  ./images/team-mob-min/team-2mob-2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
 
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -433,30 +395,19 @@
             </li>
 
             <li class="team__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-ds-min/team-3ds-1x-min.jpg,
-                    ./images/team-ds-min/team-3ds-2x-min.jpg
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tab-min/team-3tab-1x-min.jpg,
-                    ./images/team-tab-min/team-3tab-2x-min.jpg
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mob-min/team-3mob-1x-min.jpg,
-                    ./images/team-mob-min/team-3mob-2x-min.jpg
-                  "
-                  media="(min-width:480px)"
-                />
-                <img src="./images/six.jpg" alt="Николай Тарасов" />
-              </picture>
+              <img
+                alt="фото-Николай Тарасов"
+                src="./images/six.jpg"
+                srcset="
+                  ./images/team-ds-min/team-3ds-1x-min.jpg   270w,
+                  ./images/team-tab-min/team-3tab-1x-min.jpg 354w,
+                  ./images/team-mob-min/team-3mob-1x-min.jpg 450w,
+                  ./images/team-ds-min/team-3ds-2x-min.jpg   540w,
+                  ./images/team-tab-min/team-3tab-2x-min.jpg 708w,
+                  ./images/team-mob-min/team-3mob-2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
 
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -507,30 +458,19 @@
             </li>
 
             <li class="team__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/team-ds-min/team-4ds-1x-min.jpg,
-                    ./images/team-ds-min/team-4ds-2x-min.jpg
-                  "
-                  media="(min-width:1200px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-tab-min/team-4tab-1x-min.jpg,
-                    ./images/team-tab-min/team-4tab-2x-min.jpg
-                  "
-                  media="(min-width:768px)"
-                />
-                <source
-                  srcset="
-                    ./images/team-mob-min/team-4mob-1x-min.jpg,
-                    ./images/team-mob-min/team-4mob-2x-min.jpg
-                  "
-                  media="(min-width:480px)"
-                />
-                <img src="./images/seven.jpg" alt="Михаил Ермаков" />
-              </picture>
+              <img
+                alt="фото-Михаил Ермаков"
+                src="./images/seven.jpg"
+                srcset="
+                  ./images/team-ds-min/team-4ds-1x-min.jpg   270w,
+                  ./images/team-tab-min/team-4tab-1x-min.jpg 354w,
+                  ./images/team-mob-min/team-4mob-1x-min.jpg 450w,
+                  ./images/team-ds-min/team-4ds-2x-min.jpg   540w,
+                  ./images/team-tab-min/team-4tab-2x-min.jpg 708w,
+                  ./images/team-mob-min/team-4mob-2x-min.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px, 100vw"
+              />
 
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>

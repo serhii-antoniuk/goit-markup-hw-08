@@ -1,5 +1,4 @@
 .footer {
-  // display: flex;
   padding: 60px 0;
   background-color: var(--footer-bg-color);
 }
@@ -15,8 +14,6 @@
 }
 
 .footer__box-contact {
-  // flex-grow: 1;
-  // margin-right: 70px;
   @media screen and( min-width: 1200px) {
     margin-right: 70px;
   }
@@ -82,10 +79,6 @@
 .footer__title--justify-content {
   justify-content: center;
 }
-
-// .footer__box-socials {
-//   // margin-right: 93px;
-// }
 
 .footer__title-form {
   justify-content: center;
